@@ -15,6 +15,7 @@ h1{
     flex-direction: column;
     max-width: 500px;
     position: absolute;
+    padding-bottom: 2%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
