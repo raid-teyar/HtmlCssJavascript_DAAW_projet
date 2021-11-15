@@ -3,7 +3,7 @@ var submit = document.getElementById('submit');
 var pass;
 
 //user info
-var user = [];
+user = [];
 
 submit.addEventListener("click", () => {
 
@@ -11,7 +11,9 @@ submit.addEventListener("click", () => {
     for (let i = 0; i < inputs.length; i++) {
         user[i] = inputs[i].value;
     }
-    
+
+    localStorage.setItem("userInfo", user);
+
     ValidateAll(inputs);
     if (pass) {
         window.alert("le compte a ete cree avec succes!");
