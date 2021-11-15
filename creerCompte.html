@@ -12,7 +12,7 @@
 <body>
     <div class="form">
         <h1 style="margin-top: 5%;">Registration Form</h1>
-        <div class="container">
+        <form onsubmit="formOnSubmit()" action="accueil.html" class="container">
             <label><b>Nom:</b></label>
             <input class="inputs"  type="text">
 
@@ -20,7 +20,7 @@
             <input class="inputs" type="text">
 
             <label><b>Date de naissance:<br/></b></label>
-            <input class="inputs" style="margin: 1%;" type="date"> <br/>
+            <input class="inputs" required style="margin: 1%;" type="date"> <br/>
 
             <label><b>Adresse:</b></label>
             <input class="inputs" type="text">
@@ -37,8 +37,8 @@
             <label><b>Password:</b></label>
             <input class="inputs" type="password" id="pass" >
 
-            <button class="button"  id="submit">Ajouter</button>
-        </div>
+            <button type="submit" class="button"  id="submit">Ajouter</button>
+        </form>
     </div>
 </body>
 <script src="validation2.js"></script>

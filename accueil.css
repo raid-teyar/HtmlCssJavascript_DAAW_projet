@@ -1,0 +1,260 @@
+body,
+html {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+}
+
+h2 {
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.header {
+    height: 400px;
+    background: url(DSC00050ByNORO-1-1200x675.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.header ul li {
+    display: flex;
+}
+
+.header ul {
+    position: absolute;
+    right: 0%;
+    margin: 2%;
+    min-width: 260px;
+    padding: 1%;
+    display: inline-block;
+    flex-direction: column;
+    background: linear-gradient(98deg, rgba(55, 92, 143, 1) 0%, rgba(175, 186, 199, 1) 100%);
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+    transition: all .5s ease-out;
+}
+
+.header ul:hover {
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(211, 211, 211, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(196, 193, 193, 0.09) 0px -3px 5px;
+    ;
+    color: lightgoldenrodyellow;
+}
+
+.header ul li p {
+    margin: 2%;
+    padding: 1%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px
+}
+
+.header ul li p:first-child {
+    text-decoration: underline;
+    margin: 2%;
+    padding: 1%;
+    font-size: 15px
+}
+
+.content {
+    background-color: #A1AFC1;
+    height: 900px;
+}
+
+.aside {
+    background-color: #406393;
+    height: 900px;
+    width: 340px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+}
+
+.aside ul {
+    margin-top: 200px;
+    list-style: none;
+}
+
+.aside ul li a {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    color: #A1AFC1;
+    font-size: 19px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.aside ul li a:hover {
+    color: lightgoldenrodyellow;
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+.aside ul li {
+    padding: 20px;
+    text-decoration: none;
+    color: #A1AFC1;
+}
+
+
+/* table */
+.tftable {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    color: #406393;
+    border-width: 1px;
+    border-color: #7a72a5;
+    border-collapse: collapse;
+}
+
+.tftable th {
+    font-size: 12px;
+    background-color: #406393;
+    color: #acc8cc;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #7273a5;
+    text-align: left;
+}
+
+.tftable tr {
+    background-color: #ffffff;
+}
+
+.tftable td {
+    font-size: 12px;
+    border-width: 1px;
+    padding: 20px;
+    border-style: solid;
+    border-color: #73738f;
+}
+
+.tftable tr:hover {
+    background-color: #e3e5ff;
+}
+
+/* ajouter formulaire css */
+input[type=text],input[type=password]{
+    
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input:focus, input:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+
+  #button {
+      margin: 2%;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+
+  #button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  #button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  #button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  .container{
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  #button2 {
+    margin: 2%;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #ff5a5a71 0, #ff5454 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+#button2:focus {
+  box-shadow: #e03c3c 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e0473c 0 -3px 0 inset;
+}
+
+#button2:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #e03c3c 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#button2:active {
+  box-shadow: #e03c3c 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.container{
+  padding: 0% 10% 0% 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

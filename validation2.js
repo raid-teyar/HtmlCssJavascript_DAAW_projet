@@ -5,14 +5,14 @@ var pass;
 //user info
 user = [];
 
-submit.addEventListener("click", () => {
+function formOnSubmit() {
 
     //adding user data to the user array
     for (let i = 0; i < inputs.length; i++) {
         user[i] = inputs[i].value;
     }
 
-    localStorage.setItem("userInfo", user);
+    localStorage.setObj("userInfo", user);
 
     ValidateAll(inputs);
     if (pass) {
@@ -21,7 +21,7 @@ submit.addEventListener("click", () => {
     } else {
         window.alert("Please Fill all fields...");
     }
-});
+};
 
 function ValidateAll(_array) {
     for (let i = 0; i < _array.length; i++) {
@@ -31,4 +31,9 @@ function ValidateAll(_array) {
             pass = true;
         }
     }
+}
+
+//declaring functions to store info in local storage as JSON since local storage support only strings and not arrays
+Storage.prototype.setObj = function(key, obj) {
+    return this.setItem(key, JSON.stringify(obj))
 }
