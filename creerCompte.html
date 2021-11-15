@@ -11,8 +11,7 @@
 
 <body>
     <div class="form">
-        <h1 style="margin-top: 5%;">Registration Form</h1>
-        <form onsubmit="formOnSubmit()" action="accueil.html" class="container">
+        <div   class="container">
             <label><b>Nom:</b></label>
             <input class="inputs"  type="text">
 
@@ -37,8 +36,8 @@
             <label><b>Password:</b></label>
             <input class="inputs" type="password" id="pass" >
 
-            <button type="submit" class="button"  id="submit">Ajouter</button>
-        </form>
+            <button  onclick="formOnSubmit()" class="button"  id="submit">Ajouter</button>
+        </div>
     </div>
 </body>
 <script src="validation2.js"></script>
