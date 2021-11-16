@@ -7,7 +7,7 @@ submit.addEventListener("click", () => {
     if (Validate(email.value) & password.value != '') {
         
         window.alert("Logging successed!");
-        window.location.href = '/accueil.html';
+        window.location.href = 'accueil.html';
         
     } else {
         window.alert("Please enter a valid email and password");

@@ -26,7 +26,7 @@ function formOnSubmit() {
     if (pass) {
         localStorage.setObj("userInfo", user);
         window.alert("le compte a ete cree avec succes!");
-        window.location.href = '/accueil.html';
+        window.location.href = 'accueil.html';
     } else {
         window.alert("Please Fill all fields...");
     }

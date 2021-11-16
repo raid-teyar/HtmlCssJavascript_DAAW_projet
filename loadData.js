@@ -76,22 +76,18 @@ var article = document.getElementById('article');
 
 
 listBtn.addEventListener('click', function () {
-    article.innerHTML = '';
     article.innerHTML = list_des_utilisateurs;
 });
 
 addBtn.addEventListener('click', function () {
-    article.innerHTML = '';
     article.innerHTML = ajouter_utilisateur_form;
 });
 
 modifyBtn.addEventListener('click', function () {
-    article.innerHTML = '';
     article.innerHTML = modifier_utilisateur_form;
 });
 
 deleteBtn.addEventListener('click', function () {
-    article.innerHTML = '';
     article.innerHTML = supprimer_utilisateur_form;
     var btn1 =  document.getElementById('button');
     var btn2 =  document.getElementById('button2');
