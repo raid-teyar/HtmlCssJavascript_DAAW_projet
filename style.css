@@ -3,7 +3,7 @@ form {border: 3px solid #f1f1f1;}
 
 
 body{
-  background-color: #7484FD;
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364); 
 }
 
 
@@ -13,21 +13,25 @@ h1{
     text-align: center;
 }
 .form{
-    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 5%;
+    background-color: rgb(247, 247, 247);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 500px;
+    max-height: 600px;
+    max-width: 400px;
     position: absolute;
-    padding-bottom: 2%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
-   
+    border:5px solid #2c5364;
 }
 
 /* input css */
+
+
 
 input[type=text],input[type=password]{
     width:100%;
@@ -38,6 +42,7 @@ input[type=text],input[type=password]{
     padding:8px;
     box-sizing:border-box;
     transition:.3s;
+    height: 25px;
   }
   
   input:focus, input:focus{
@@ -54,6 +59,7 @@ button {
 }
 
 .button {
+  
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
@@ -65,7 +71,7 @@ button {
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
-  height: 48px;
+  height: 40px;
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -81,7 +87,6 @@ button {
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 18px;
 }
 
 .button:focus {
@@ -112,17 +117,28 @@ button:hover {
 }
 
 img.avatar {
-  width: 40%;
+  
+  width: 50%;
   border-radius: 50%;
   
 }
 
-.container {
-  padding: 16px;
-}
+
 
 span.psw {
+  
   float: right;
-  padding-top: 16px;
+  margin: 16px;
+}
+
+
+label, input, button, a{
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  margin: 10px 0;
 }
 

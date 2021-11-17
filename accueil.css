@@ -2,13 +2,16 @@ body,
 html {
     margin: 0;
     font-family: "JetBrains Mono", monospace;
+    
 }
 
-h2 {
+ h2 {
     margin: 0;
     padding: 2%;
     text-align: center;
     text-decoration: underline;
+    color: rgba(55, 92, 143, 1);
+   
 }
 
 .header {
@@ -57,12 +60,12 @@ h2 {
 }
 
 .content {
-    background-color: #A1AFC1;
+  background: linear-gradient(to left, #c9d6ff, #e2e2e2);
     height: 900px;
 }
 
 .aside {
-    background-color: #406393;
+    background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
     height: 900px;
     width: 340px;
     float: left;
@@ -70,22 +73,25 @@ h2 {
     ;
 }
 
+
+
 .aside ul {
     margin-top: 200px;
     list-style: none;
 }
 
 .aside ul li a {
+  text-align: center;
     text-decoration: none;
     transition: all .2s ease-in-out;
     color: #A1AFC1;
-    font-size: 19px;
+    font-size: 30px;
     font-family: "JetBrains Mono", monospace;
 }
 
 .aside ul li a:hover {
     color: lightgoldenrodyellow;
-    font-size: 21px;
+    font-size: 35px;
     text-decoration: underline;
 }
 
@@ -109,7 +115,7 @@ h2 {
 }
 
 .tftable th {
-    font-size: 12px;
+    font-size: 23px;
     background-color: #406393;
     color: #acc8cc;
     border-width: 1px;
@@ -124,7 +130,7 @@ h2 {
 }
 
 .tftable td {
-    font-size: 12px;
+    font-size: 20px;
     border-width: 1px;
     padding: 20px;
     border-style: solid;
@@ -198,12 +204,7 @@ input[type=text],input[type=password]{
     transform: translateY(2px);
   }
 
-  .container{
-    padding: 0% 10% 0% 10%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+
 
 
   #button2 {
@@ -258,3 +259,4 @@ input[type=text],input[type=password]{
   justify-content: center;
   flex-direction: column;
 }
+
